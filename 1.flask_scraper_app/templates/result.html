@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Results</title></head>
+<body>
+  <h2>YouTube Results</h2>
+  <ul>
+    {% for item in yt_data %}
+      <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h2>Amazon Results</h2>
+  <ul>
+    {% for item in amz_data %}
+      <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

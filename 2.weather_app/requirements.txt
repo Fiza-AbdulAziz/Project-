@@ -1,0 +1,4 @@
+flask
+requests
+python-dotenv
+gunicorn  # Required for deployment (especially on Render)
